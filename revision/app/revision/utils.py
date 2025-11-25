@@ -1,7 +1,7 @@
 
 
 def is_strong_password(password: str) -> bool:
-   
+  
     has_number = any(ch.isdigit() for ch in password)
     has_upper = any(ch.isupper() for ch in password)
     has_lower = any(ch.islower() for ch in password)
@@ -10,7 +10,7 @@ def is_strong_password(password: str) -> bool:
 
 
 def has_duplicates(items: list[int | float | str | bool]) -> bool:
-    
+   
     return len(set(items)) != len(items)
 
 
