@@ -1,22 +1,26 @@
-def is_strong_password(password: str) -> bool:
-  
-    check_for_numbers = any(ch.isdigit() for ch in password)
-   
-    has_capital_letter = any(ch.isupper() for ch in password)
-   
-    has_small_letter = any(ch.islower() for ch in password)
-
-  
-    return len(password) >= 8 and d and u and l
-
-def has_duplicates(list: list[int | float | str | bool]) -> bool:
-    return len(set(list)) != len(list)
 
 
+from revision.utils import is_strong_password, has_duplicates, temperature_validator
 
-def temperature_validator(temp: float) -> str:
+
+if __name__ == "__main__":
     
-    if temp > 20:
-        return "тепло"
+    password = "StrongPass123"
+    if is_strong_password(password):
+        print("password is strong")
     else:
-        return "холодно"
+        print("password is easy")
+    
+    
+    items = [1, 2, 3, 2]
+    if has_duplicates(items):
+        print("there are duplicates")
+    else:
+        print("there arent any duplicates")
+    
+    
+    temp = 25
+    if temperature_validator(temp):
+        print("temperature is warm")
+    else:
+        print("temperature is cold")
