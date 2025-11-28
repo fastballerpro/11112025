@@ -1,5 +1,3 @@
-
-
 def is_strong_password(password: str) -> bool:
   
     has_number = any(ch.isdigit() for ch in password)
@@ -14,6 +12,6 @@ def has_duplicates(items: list[int | float | str | bool]) -> bool:
     return len(set(items)) != len(items)
 
 
-def temperature_validator(temp: float) -> bool:
+def is_temperature_warm(temp: float) -> bool:
     
     return temp > 20
