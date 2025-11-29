@@ -1,9 +1,6 @@
 from utils import is_valid_email, avg, uah_to_usd
 import pytest
 
-def test_strong_password():
-    password = "sdfhvdhfivdhfsvfds"
-
 def test_valid_email():
     assert is_valid_email("user@example.com") is True
 
