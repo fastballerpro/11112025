@@ -1,9 +1,6 @@
 from utils import is_valid_email, avg, uah_to_usd
 import pytest
 
-def test_strong_password():
-    password = "sdfhvdhfivdhfsvfds"
-
 def test_valid_email():
     assert is_valid_email("user@example.com") is True
 
@@ -56,7 +53,4 @@ def test_uah_to_usd_large_values():
 
 def test_uah_to_usd_float_precision():
     assert abs(uah_to_usd(99.99, 36.6) - (99.99 / 36.6)) < 1e-9
-import utils
 
-def test_strong_password():
-    password = "sdfhvdhfivdhfsvfds"
