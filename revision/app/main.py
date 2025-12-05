@@ -1,6 +1,22 @@
-from utils import is_strong_password, has_duplicates, is_temperature_warm
+from oop.models import Book, Library
+
+
+def main():
+
+    library = Library("City Library")
+
+    book1 = Book("Taras Shevchenko", "Kobzar")
+    book2 = Book("Lesya Ukrainka", "Forest Song")
+
+    library.add_book(book1)
+    library.add_book(book2)
+
+    library.show_books()
+
+    library.remove_book(book1.uid)
+
+    library.show_books()
+
 
 if __name__ == "__main__":
-    print(is_strong_password("StrongPass123"))
-    print(has_duplicates([1, 2, 3, 2]))
-    print(is_temperature_warm(25))
+    main()
