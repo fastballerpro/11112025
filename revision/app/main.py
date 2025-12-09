@@ -1,4 +1,7 @@
 from oop.models import Book, Library
+from dec import timer
+import time
+
 
 
 def main():
@@ -16,6 +19,15 @@ def main():
     library.remove_book(book1.uid)
 
     library.show_books()
+
+
+    @timer
+    def example():
+     time.sleep(2)
+     return "Done!"
+
+    print(example())
+
 
 
 if __name__ == "__main__":
