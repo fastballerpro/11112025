@@ -53,3 +53,4 @@ def test_uah_to_usd_large_values():
 
 def test_uah_to_usd_float_precision():
     assert abs(uah_to_usd(99.99, 36.6) - (99.99 / 36.6)) < 1e-9
+
