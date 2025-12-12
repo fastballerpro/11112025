@@ -1,5 +1,6 @@
 from oop.models import Book, Library
 from dec import timer
+from dec import round_result
 import time
 
 
@@ -27,6 +28,13 @@ def main():
      return "Done!"
 
     print(example())
+
+    @round_result(2)
+    def divide(a, b):
+     return a / b
+
+
+    print(divide(10, 3))
 
 
 
