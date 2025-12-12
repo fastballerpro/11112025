@@ -1,4 +1,4 @@
-from utils import is_valid_email, avg, uah_to_usd
+from app.utils import is_valid_email, avg, uah_to_usd
 import pytest
 
 def test_valid_email():
