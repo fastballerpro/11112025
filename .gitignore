@@ -2,6 +2,21 @@
 __pycache__/
 *.py[codz]
 *$py.class
+# logs
+log.csv
+
+# local configs
+revision/app/config.py
+revision/app/logger.py
+revision/__init__.py
+
+
+# pytest
+revision/app/conftest.py
+
+# tooling
+uv.lock
+pyproject.toml
 
 # C extensions
 *.so
